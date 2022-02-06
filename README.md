@@ -3,13 +3,13 @@
 ## This solution contains the following:
 
 A console application - .Net Core 3.1 (SevenAssignmentApp)
-A .Net Core 3.1 Library (SevenAssignmentLibrary)
+A .Net Core 3.1 Library (SevenAssignmentLibrary) which is used a NUGET package.
 A Test library, with interation and unit tests
 
 ## Description
 
 A console application that outputs:
-The users full name for id=41 (42 did not exist)
+The users full name for id=41 (42 did not exist - so I used 41 for this task)
 All the users first names (comma separated) who are 23
 The number of genders per Age, displayed from youngest to oldest (I noticed some obsure genders, such as Y and T - wasnt sure what to
 do with those, so treated them as Male or Female in any case)
@@ -63,6 +63,9 @@ Polly is a . NET resilience and transient-fault-handling library that allows dev
 in a fluent and thread-safe manner.
 
 Notes/Reading: https://www.twilio.com/blog/using-polly-circuit-breakers-resilient-net-web-service-consumers
+
+#### Retrying
+I have set retries to 3, with 3 seconds wait and retry. These are configurable.
 
 
 ## Tests
