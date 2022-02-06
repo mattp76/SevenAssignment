@@ -78,3 +78,7 @@ Note: My idea with the integration tests is to test against real objects, rather
 
 Caching is being used against the SevenClient responses, so we dont need to make repeated calls to that server. The effort here is
 to help improve permformance and efficiency of the application. Caching expiration time is configurable.
+
+## Logging
+
+Serilog is being used to help generate a log file. For now, I just added afew log entries where we see exceptions. 
